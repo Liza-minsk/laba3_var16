@@ -1,21 +1,30 @@
 #include "Karamel.h"
+#include"Konfeta.h"
 #include"stdafx.h"
+#include<string>
 #include<iostream>
 using namespace std;
 
-Karamel::Karamel(void)
+Karamel::Karamel(){}
+
+Karamel::Karamel(std::string vk, std::string f): Konfeta(f)
 {
-	cout << "Konstructor dlja karameli" << endl;
+	vkus = vk;
 }
 
-void Karamel::setKaramel(std::string vkus)
+void Karamel::setVkus(std::string vk)
 {
-	this->vkus = vkus;
+	vkus = vk;
 }
-
-void Karamel::getKaramel(void)
+std::string Karamel::getVkus()
 {
-	cout << "Karamel so vkusom" << this->vkus << endl;
+	return vkus;
+}
+void Karamel::print()
+{
+	cout << "Karamel" << endl;
+	Konfeta::print();
+	cout << getVkus() << endl;
 }
 
 Karamel::~Karamel()

@@ -1,21 +1,29 @@
 #include"Pechen.h"
 #include"stdafx.h"
+#include"Kond_izdel.h"
 #include<iostream>
 using namespace std;
-Pechen ::Pechen(void)
-{
-	cout << "Vizov constructora dlaj pechen" << endl;
+
+Pechen::Pechen( std::string name,std::string i) : Kond_izde(name)
+{	
+	ingred = i;
 }
 
-void Pechen::setIngrid(std::string ing)
+void Pechen::setIngred(std::string ing)
 {
-	this->ing = ing;
+	ingred = ing;
+}
+std::string Pechen::getIngrid()
+{
+	return ingred;
 }
 
-void Pechen::getIndrid(void)
+void Pechen::print()
 {
-	cout << "Ingridient "<< this->ing << endl;
+	Kond_izde::print();
+	cout << "Ingridient " <<getIngrid()<< endl;	
 }
+
 
 Pechen::~Pechen()
 {

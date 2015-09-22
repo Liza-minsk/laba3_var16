@@ -1,14 +1,16 @@
 #pragma once
 #include"stdafx.h"
-#include"Kond_izdel.h"
+#include"Konfeta.h"
 #include"string"
-class Karamel :public Kond_izde
+class Karamel : public Konfeta	
 {
-	std::string name;
+	std::string vkus;
 public:
-	Karamel(void);
-	void setKaramel(std::string vkus);
-	void getKaramel(void);
+	Karamel();
+	Karamel(std::string, std::string);
+	void setVkus(std::string);
+	std::string getVkus();
+	virtual void print();
 	~Karamel();
 
 };

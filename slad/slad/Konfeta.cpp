@@ -1,21 +1,29 @@
 #include"Konfeta.h"
+#include"Kond_izdel.h"
 #include"stdafx.h"
 #include<iostream>
 using namespace std;
 
-Konfeta::Konfeta(void)
+Konfeta::Konfeta(std::string n, std::string fab) : Kond_izde(n)
 {
-	cout << "Constructor dlja konfeti" << endl;
+	f = fab;
 }
 
-void Konfeta::setFabrik(std::string f)
+void Konfeta::setFabrik(std::string k)
 {
-	this->f = f;
+	f = k;
 }
 
-void Konfeta::getFabrik(void)
+std::string Konfeta::getFabrik()
 {
-	cout << "Fabrika konfeti"<<this->f << endl;
+	return f ;
+}
+
+void Konfeta::print()
+{
+	cout << "Konfeta" << endl;
+	Kond_izde::print();
+	cout<<"Fabrika"<< getFabrik();
 }
 
 Konfeta::~Konfeta()

@@ -2,23 +2,33 @@
 #include"stdafx.h"
 #include<iostream>
 using namespace std;
-Kond_izde::Kond_izde(void)
+Kond_izde::Kond_izde(std::string n)
 {
-	cout << "Viziv constructora dlja konditerskogo izdelija " << endl;
+	name = n;
 }
 
-void Kond_izde::setName(std::string name)
+Kond_izde::Kond_izde()
 {
-	this->name = name;
+	name = "";
 }
-
-void Kond_izde::getName()
-{
-	cout << "Nazvanie konditerskogo izdelija" << this->name << endl;
-}
-
 Kond_izde::~Kond_izde()
 {
 	cout << "Destuctor nazvanija konditerskogo izdelija" << endl;
 }
+void Kond_izde::setName(std::string nam)
+{
+	name = nam;
+}
+
+std::string Kond_izde::getName()
+{
+	return name;
+}
+void Kond_izde::print()
+{
+	cout << "Konditerskoe izdelie" << endl;
+	cout << "Nazvanie:" << getName() << endl;
+
+}
+
 

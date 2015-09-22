@@ -1,20 +1,34 @@
 #include "Shokolad_kon.h"
 #include"stdafx.h"
+#include"Kond_izdel.h"
+#include"Konfeta.h"
+#include"string"
 using namespace std;
 
-Shok_konf::Shok_konf(void)
+Shok_konf::Shok_konf(){}
+
+Shok_konf::Shok_konf(std::string nach, std::string fab, std::string nam): Konfeta(fab,nam)
 {
-	cout << "Construct dlja shokoladnoi konfeti" << endl;
+	nachinka = nach;
 }
 
-void Shok_konf::setShok_konf(std::string nachinka)
+void Shok_konf::setShok_konf(std::string n)
 {
-	this->nachinka = nachinka;
+	nachinka = n;
 }
 
-void Shok_konf::getShok_konf(void)
+std::string Shok_konf::getShok_konf(void)
 {
-	cout << "Nachimka shokoladnoi konfeti"<<this->nachinka << endl;
+	return nachinka;
+}
+
+
+void Shok_konf::print()
+{
+	cout << "Shokoladnaja konfeta" << endl;
+Konfeta::print();
+Kond_izde::print();
+
 }
 
 Shok_konf::~Shok_konf()

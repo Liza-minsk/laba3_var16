@@ -32,8 +32,8 @@ int main()
 	Karamel l;
 	l.setName("Raduga");
 	l.getName();
-	l.setKaramel("Jabloko");
-	l.getKaramel();
+	l.setVkus("Jabloko");
+	l.getVkus();
 
 	cout << endl;
 
@@ -48,8 +48,8 @@ int main()
 	Pechen p;
 	p.setName("Kreker");
 	p.getName();
-	p.setIngrid("Muka");
-	p.getIndrid();
+	p.setIngred("Marmelad");
+	p.getIngrid();
 
 	cout << endl;
 
