@@ -5,9 +5,9 @@
 #include<iostream>
 using namespace std;
 
-Karamel::Karamel(){}
+Karamel::Karamel() {};
 
-Karamel::Karamel(std::string vk, std::string f): Konfeta(f)
+Karamel::Karamel(std::string vk, std::string f, std::string n) : Konfeta(f, n)
 {
 	vkus = vk;
 }

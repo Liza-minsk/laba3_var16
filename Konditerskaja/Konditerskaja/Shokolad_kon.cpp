@@ -5,9 +5,9 @@
 #include"string"
 using namespace std;
 
-Shok_konf::Shok_konf(){}
+Shok_konf::Shok_konf() {}
 
-Shok_konf::Shok_konf(std::string nach, std::string fab, std::string nam): Konfeta(fab,nam)
+Shok_konf::Shok_konf(std::string nach, std::string fab, std::string nam) : Konfeta(fab, nam)
 {
 	nachinka = nach;
 }
@@ -26,8 +26,8 @@ std::string Shok_konf::getShok_konf(void)
 void Shok_konf::print()
 {
 	cout << "Shokoladnaja konfeta" << endl;
-Konfeta::print();
-Kond_izde::print();
+	Konfeta::print();
+	Kond_izde::print();
 
 }
 

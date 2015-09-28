@@ -4,8 +4,8 @@
 #include<iostream>
 using namespace std;
 
-Pechen::Pechen( std::string name,std::string i) : Kond_izde(name)
-{	
+Pechen::Pechen(std::string name, std::string i) : Kond_izde(name)
+{
 	ingred = i;
 }
 
@@ -21,7 +21,7 @@ std::string Pechen::getIngrid()
 void Pechen::print()
 {
 	Kond_izde::print();
-	cout << "Ingridient " <<getIngrid()<< endl;	
+	cout << "Ingridient " << getIngrid() << endl;
 }
 
 

@@ -16,14 +16,14 @@ void Konfeta::setFabrik(std::string k)
 
 std::string Konfeta::getFabrik()
 {
-	return f ;
+	return f;
 }
 
 void Konfeta::print()
 {
 	cout << "Konfeta" << endl;
 	Kond_izde::print();
-	cout<<"Fabrika"<< getFabrik();
+	cout << "Fabrika" << getFabrik();
 }
 
 Konfeta::~Konfeta()
