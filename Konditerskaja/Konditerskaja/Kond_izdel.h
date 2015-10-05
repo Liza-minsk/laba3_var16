@@ -13,4 +13,3 @@ public:
 	~Kond_izde();
 
 };
-

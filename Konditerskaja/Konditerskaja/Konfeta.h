@@ -13,4 +13,3 @@ public:
 	virtual void print();
 	~Konfeta();
 };
-

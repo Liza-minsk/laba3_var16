@@ -1,5 +1,5 @@
-#include "Shokolad_kon.h"
 #include"stdafx.h"
+#include "Shokolad_kon.h"
 #include"Kond_izdel.h"
 #include"Konfeta.h"
 #include"string"
@@ -32,6 +32,4 @@ void Shok_konf::print()
 }
 
 Shok_konf::~Shok_konf()
-{
-	cout << "Destructor dlja shok_konfeti" << endl;
-}
+{}

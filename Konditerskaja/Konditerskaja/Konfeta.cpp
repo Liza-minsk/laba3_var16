@@ -1,6 +1,7 @@
+#include"stdafx.h"
 #include"Konfeta.h"
 #include"Kond_izdel.h"
-#include"stdafx.h"
+
 #include<iostream>
 using namespace std;
 
@@ -28,5 +29,5 @@ void Konfeta::print()
 
 Konfeta::~Konfeta()
 {
-	cout << "Constructor konfeti" << endl;
+	
 }

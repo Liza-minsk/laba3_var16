@@ -1,6 +1,6 @@
+#include"stdafx.h"
 #include "Karamel.h"
 #include"Konfeta.h"
-#include"stdafx.h"
 #include<string>
 #include<iostream>
 using namespace std;
@@ -29,5 +29,5 @@ void Karamel::print()
 
 Karamel::~Karamel()
 {
-	cout << "Destructor karameli" << endl;
+	
 }

@@ -1,5 +1,6 @@
-#include"Pechen.h"
 #include"stdafx.h"
+#include"Pechen.h"
+
 #include"Kond_izdel.h"
 #include<iostream>
 using namespace std;
@@ -26,6 +27,4 @@ void Pechen::print()
 
 
 Pechen::~Pechen()
-{
-	cout << "Destructor pechenja" << endl;
-}
+{}
